@@ -1,0 +1,8 @@
+[build]
+  setup = ["python38", "postgresql", "gcc"]
+
+[install]
+  command = "python -m venv --copies /opt/venv && . /opt/venv/bin/activate && pip install -r requirements.txt"
+
+[start]
+  command = "python manage.py runserver"
